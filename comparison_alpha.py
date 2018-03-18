@@ -1,6 +1,6 @@
 # import relevant packages for use in this script
 from pathlib import Path
-import json
+import json, recro_functions
 
 # set user_profile and product database file paths
 user_profile_json = Path("databases/user_profile.json")
@@ -21,20 +21,9 @@ if products_json.is_file() and user_profile_json.is_file():
 			# relevant messaging
 			p_json = json.load(prods)
 			products = p_json["products"]
-			similar_journeys = []
-
+			# find journey similarity
 			for product in products:
-				journeys = product["user_journeys"]
-				for journey in journeys:
-					x = 0
-					similarity_points = 0
-					pages = journey["pages"]
-					for page in pages:
-						if pages[page] == user_journey[str(x)]:
-							similarity_points+=1
-						x+=1;
-					similarity = similarity_points/x
-					if similarity > 0.1:
-						similar_journeys.append([journey["path_id"], similarity])
-			similar_journeys = sorted(similar_journeys, key=lambda x: x[1], reverse=True)
-			print (similar_journeys)
+				journey_similarity = recro_functions.journey_comparison(product, user_journey)
+				product["journey_similarity"] = journey_similarity
+
+			print(json.dumps(products, indent=4))

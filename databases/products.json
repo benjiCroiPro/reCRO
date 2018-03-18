@@ -30,7 +30,7 @@
 						"2": "/products/huawei/p9"
 					},
 					"journey_count": "23",
-					"joruney_conversions": "18" 
+					"journey_conversions": "18" 
 				},
 				{
 					"path_id": "EX0001:002",
@@ -38,7 +38,7 @@
 						"0": "/products/huawei/p9"
 					},
 					"journey_count": "23",
-					"joruney_conversions": "18" 
+					"journey_conversions": "18" 
 				},
 				{
 					"path_id": "EX0001:002",
@@ -46,7 +46,7 @@
 						"0": "/products/huawei/p10"
 					},
 					"journey_count": "10",
-					"joruney_conversions": "5" 
+					"journey_conversions": "5" 
 				}
 			],
 			"impressions": "56",
@@ -82,7 +82,7 @@
 						"2": "/products/huawei/usb_type-c_charger"
 					},
 					"journey_count": "30",
-					"joruney_conversions": "18" 
+					"journey_conversions": "18" 
 				},
 				{
 					"path_id": "EX0002:002",
@@ -90,7 +90,7 @@
 						"0": "/products/huawei/usb_type-c_charger"
 					},
 					"journey_count": "123",
-					"joruney_conversions": "81" 
+					"journey_conversions": "81" 
 				},
 				{
 					"path_id": "EX0002:002",
@@ -101,7 +101,7 @@
 						"3": "/products/huawei/usb_type-c_charger"
 					},
 					"journey_count": "10",
-					"joruney_conversions": "5" 
+					"journey_conversions": "5" 
 				}
 			],
 			"impressions": "163",
@@ -137,7 +137,7 @@
 						"2": "/products/huawei/p10"
 					},
 					"journey_count": "30",
-					"joruney_conversions": "9" 
+					"journey_conversions": "9" 
 				},
 				{
 					"path_id": "EX0003:002",
@@ -145,7 +145,7 @@
 						"0": "/products/huawei/p10"
 					},
 					"journey_count": "23",
-					"joruney_conversions": "11" 
+					"journey_conversions": "11" 
 				},
 				{
 					"path_id": "EX0003:002",
@@ -156,7 +156,7 @@
 						"3": "/products/huawei/p10"
 					},
 					"journey_count": "10",
-					"joruney_conversions": "5" 
+					"journey_conversions": "5" 
 				}
 			],
 			"impressions": "63",
