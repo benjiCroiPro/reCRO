@@ -1,0 +1,31 @@
+{
+	"user_id": "EU001",
+	"user_name": {
+		"first_name": "Ben",
+		"last_name": "Co",
+		"full_name": "Ben Co"
+	},
+	"user_journey": {
+		"0": "/",
+		"1": "/products/",
+		"2": "/products/huawei/p10",
+		"3": "/products/huawei/usb_type-c_charger"
+	},
+	"product_impressions": [
+		{
+			"product_id": "EX0002",
+			"product_title": "Huawei USB Type-C Charger"
+		},
+		{
+			"product_id": "EX0003",
+			"product_title": "Huawei P10"
+		}
+	],
+	"current_page": "/products/huawei/usb_type-c_charger",
+	"basket": [
+		{
+			"product_id": "EX0002",
+			"quantity": "1"
+		}
+	]
+}

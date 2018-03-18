@@ -1,0 +1,167 @@
+{
+	"site": "example",
+	"products": [
+		{
+			"product_id": "EX0001",
+			"product_name": "Huawei P9",
+			"product_brand": "Huawei",
+			"product_categories": {
+				"primary": "mobile_phone",
+				"secondary": "android"
+			},
+			"related_products": [
+				{
+					"product_id": "EX0002",
+					"product_title": "Huawei USB Type-C Charger",
+					"product_relationship": "accessory"
+				},
+				{
+					"product_id": "EX0003",
+					"product_title": "Huawei P10",
+					"product_relationship": "current_version"
+				}
+			],
+			"user_journeys": [
+				{
+					"path_id": "EX0001:001",
+					"pages":{
+						"0": "/",
+						"1": "/products/",
+						"2": "/products/huawei/p9"
+					},
+					"journey_count": "23",
+					"joruney_conversions": "18" 
+				},
+				{
+					"path_id": "EX0001:002",
+					"pages": {
+						"0": "/products/huawei/p9"
+					},
+					"journey_count": "23",
+					"joruney_conversions": "18" 
+				},
+				{
+					"path_id": "EX0001:002",
+					"pages": {
+						"0": "/products/huawei/p10"
+					},
+					"journey_count": "10",
+					"joruney_conversions": "5" 
+				}
+			],
+			"impressions": "56",
+			"basket_penetration": "23",
+			"purchases": "12"
+		},
+		{
+			"product_id": "EX0002",
+			"product_name": "Huawei USB Type-C Charger",
+			"product_brand": "Huawei",
+			"product_categories": {
+				"primary": "mobile_phone_accessory",
+				"secondary": "usb_type-c_cable"
+			},
+			"related_products": [
+				{
+					"product_id": "EX0001",
+					"product_title": "Huawei P9",
+					"product_relationship": "accessory"
+				},
+				{
+					"product_id": "EX0003",
+					"product_title": "Huawei P10",
+					"product_relationship": "accessory"
+				}
+			],
+			"user_journeys": [
+				{
+					"path_id": "EX0002:001",
+					"pages": {
+						"0": "/",
+						"1": "/products/",
+						"2": "/products/huawei/usb_type-c_charger"
+					},
+					"journey_count": "30",
+					"joruney_conversions": "18" 
+				},
+				{
+					"path_id": "EX0002:002",
+					"pages": {
+						"0": "/products/huawei/usb_type-c_charger"
+					},
+					"journey_count": "123",
+					"joruney_conversions": "81" 
+				},
+				{
+					"path_id": "EX0002:002",
+					"pages": {
+						"0": "/",
+						"1": "/products/",
+						"2": "/products/huawei/p10",
+						"3": "/products/huawei/usb_type-c_charger"
+					},
+					"journey_count": "10",
+					"joruney_conversions": "5" 
+				}
+			],
+			"impressions": "163",
+			"basket_penetration": "35",
+			"purchases": "20"
+		},
+		{
+			"product_id": "EX0003",
+			"product_name": "Huawei P10",
+			"product_brand": "Huawei",
+			"product_categories": {
+				"primary": "mobile_phone",
+				"secondary": "android"
+			},
+			"related_products": [
+				{
+					"product_id": "EX0002",
+					"product_title": "Huawei USB Type-C Charger",
+					"product_relationship": "accessory"
+				},
+				{
+					"product_id": "EX0001",
+					"product_title": "Huawei P9",
+					"product_relationship": "previous_version"
+				}
+			],
+			"user_journeys": [
+				{
+					"path_id": "EX0003:001",
+					"pages": {
+						"0": "/",
+						"1": "/products/",
+						"2": "/products/huawei/p10"
+					},
+					"journey_count": "30",
+					"joruney_conversions": "9" 
+				},
+				{
+					"path_id": "EX0003:002",
+					"pages": {
+						"0": "/products/huawei/p10"
+					},
+					"journey_count": "23",
+					"joruney_conversions": "11" 
+				},
+				{
+					"path_id": "EX0003:002",
+					"pages": {
+						"0": "/",
+						"1": "/products/",
+						"2": "/products/huawei/p9",
+						"3": "/products/huawei/p10"
+					},
+					"journey_count": "10",
+					"joruney_conversions": "5" 
+				}
+			],
+			"impressions": "63",
+			"basket_penetration": "21",
+			"purchases": "17"
+		}
+	]
+}
