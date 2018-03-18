@@ -51,7 +51,8 @@
 			],
 			"impressions": "56",
 			"basket_penetration": "23",
-			"purchases": "12"
+			"purchases": "12",
+			"product_url": "/products/huawei/p9"
 		},
 		{
 			"product_id": "EX0002",
@@ -106,7 +107,8 @@
 			],
 			"impressions": "163",
 			"basket_penetration": "35",
-			"purchases": "20"
+			"purchases": "20",
+			"product_url": "/products/huawei/usb_type-c_charger"
 		},
 		{
 			"product_id": "EX0003",
@@ -161,7 +163,8 @@
 			],
 			"impressions": "63",
 			"basket_penetration": "21",
-			"purchases": "17"
+			"purchases": "17",
+			"product_url": "/products/huawei/p10"
 		}
 	]
 }

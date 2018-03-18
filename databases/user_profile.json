@@ -1,5 +1,6 @@
 {
 	"user_id": "EU001",
+	"current_page": "/products/huawei/p10",
 	"user_name": {
 		"first_name": "Ben",
 		"last_name": "Co",
@@ -8,8 +9,7 @@
 	"user_journey": {
 		"0": "/",
 		"1": "/products/",
-		"2": "/products/huawei/p10",
-		"3": "/products/huawei/usb_type-c_charger"
+		"2": "/products/huawei/p10"
 	},
 	"product_impressions": [
 		{
@@ -21,7 +21,6 @@
 			"product_title": "Huawei P10"
 		}
 	],
-	"current_page": "/products/huawei/usb_type-c_charger",
 	"basket": [
 		{
 			"product_id": "EX0002",
