@@ -21,10 +21,11 @@ if products_json.is_file() and user_profile_json.is_file():
 			# relevant messaging
 			p_json = json.load(prods)
 			products = p_json["products"]
+			similar_journeys = []
 
 			for product in products:
-				journey = product["user_journeys"]
-				for journey in journey:
+				journeys = product["user_journeys"]
+				for journey in journeys:
 					x = 0
 					similarity_points = 0
 					pages = journey["pages"]
@@ -33,4 +34,7 @@ if products_json.is_file() and user_profile_json.is_file():
 							similarity_points+=1
 						x+=1;
 					similarity = similarity_points/x
-					print ("Path ID: "+journey["path_id"] + ", Journey similarity: " + str(similarity))
+					if similarity > 0.1:
+						similar_journeys.append([journey["path_id"], similarity])
+			similar_journeys = sorted(similar_journeys, key=lambda x: x[1], reverse=True)
+			print (similar_journeys)
