@@ -9,12 +9,12 @@ def journey_comparison(product, user_journey):
 		pages = journey["pages"]
 		for page in pages:
 			for uj in user_journey:
-				if pages[page] == uj:
+				if pages[page] == user_journey[uj]:
 					similarity_points+=1
-			x+=1;
+				x+=1;
 		similarity = similarity_points/x
 		conversion_rate = int(journey["journey_conversions"])/int(journey["journey_count"])
-		if similarity > 0.1 and conversion_rate:
+		if similarity > 0.1 and conversion_rate > 0.1:
 			similar_journeys.append({"path_id": journey["path_id"], "similarity": similarity, "conversion_rate": conversion_rate })
 
 	similar_journeys = sorted(similar_journeys, key=lambda x: (x["path_id"], x["conversion_rate"]), reverse=True)
@@ -40,6 +40,16 @@ def product_relevance(productA, productB):
 	elif productA_categories["secondary"] == productB_categories["secondary"]:
 		secondary_match += 1
 
-	relevance = primary_match + (secondary_match / 2)
+	similarity_points = 0
+	for prodA_rel_prod in productA_related_products:
+		for prodB_rel_prod in productB_related_products:
+			if prodA_rel_prod["product_id"] == prodB_rel_prod["product_id"]:
+				similarity_points+=1
+
+	similarity = similarity_points
+
+	
+
+	relevance = primary_match + (secondary_match / 2) + similarity
 
 	return relevance

@@ -30,8 +30,8 @@ if products_json.is_file() and user_profile_json.is_file():
 			
 			for product in products:
 				journey_similarity = recro_functions.journey_comparison(product, user_journey)
+				print (journey_similarity)
 				for pj in product["user_journeys"]:
-					print (journey_similarity)
 					for js in journey_similarity:
 						pj["journey_similarity"] = js["similarity"]
 						pj["journey_conversion_rate"] = js["conversion_rate"]
